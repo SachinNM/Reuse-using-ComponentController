@@ -1,5 +1,6 @@
 # Reuse-using-ComponentController
-This is demo project with 3 tab screens. The project demonstrates use of D3 library to build charts using either Custom control or Component Controller design paradigm.  
+This is demo project with 3 tab screens. The project demonstrates use of D3 library to build charts using either Custom control or Component Controller design paradigm.
+
 ## Tab Screen 1: 
 <p align="center">
   <img width="460" height="300" src="https://github.com/SachinNM/Reuse-using-ComponentController/blob/master/Screenshots/Table.PNG">
@@ -23,6 +24,6 @@ Bar Chart build using Reusable Component Controller design. This also uses D3 li
 
 
 ## How to run the project ?
-The project contains a local JSON file for data binding. So can be runned standalone as independent UI5 project by running index.html page.
+The project contains a local JSON file for data binding. So can be runned standalone as independent UI5 project by running "index.html" page.
 
-It will be much easier to clone or download and import the project as a WEBIDE project from git and run "index.html" as a Web Application on the WEBIDE.
+It will be much easier to clone directly from git or or download folder "D3ChartUsingComponentController" and import the project as a WEBIDE project. Then run "index.html" as a Web Application on the WEBIDE.
