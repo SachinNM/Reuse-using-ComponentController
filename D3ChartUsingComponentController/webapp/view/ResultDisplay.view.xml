@@ -1,0 +1,46 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	controllerName="d3sample.controller.ResultDisplay" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<IconTabBar id="idIconTabBarSeparatorNoIcon" expanded="true" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter text="Table View" icon="sap-icon://table-view">
+								<Table noDataText="Drop column list items here and columns in the area above" id="table0"
+									items="{path:'DataModel>/', templateShareable:true}">
+									<columns>
+										<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+											<header>
+												<Text text="Text" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											</header>
+											<footer/>
+										</Column>
+										<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+											<header>
+												<Text text="Value" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											</header>
+											<footer/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Active" id="item3">
+											<cells>
+												<Text text="{DataModel>Name}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												<Text text="{DataModel>Value}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabSeparator icon=""/>
+							<IconTabFilter id="IconTabChartCustomControl" icon="sap-icon://vertical-bar-chart" text="Custom Control"></IconTabFilter>
+							<IconTabSeparator icon=""/>
+							<IconTabFilter id="IconTabChartComponent" icon="sap-icon://vertical-bar-chart" text="Component Controller"></IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,12 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	controllerName="d3sample.customcomponents.d3barchart.controller.BarChartDisplay" displayBlock="true">
+	<App id="idAppComponentControl">
+		<pages>
+			<Page showHeader="false">
+				<content>
+					<core:HTML id="BarChartComponent"></core:HTML>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

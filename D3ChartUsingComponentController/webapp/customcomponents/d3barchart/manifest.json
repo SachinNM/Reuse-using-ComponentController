@@ -1,0 +1,96 @@
+{
+	"_version": "1.8.0",
+
+	"sap.app": {
+		"id": "d3sample.customcomponents.d3barchart.Component",
+		"type": "component",
+		"embeddedBy": "../../../../../",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{compTitle}}",
+		"description": "{{compDescription}}",
+		"resources": "resources.json",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+
+	"sap.ui5": {
+		"componentName": "d3sample.customcomponents.d3barchart",
+		"rootView" : 
+        {
+            "viewName" : "d3sample.customcomponents.d3barchart.view.BarChartDisplay",
+            "type" : "XML"
+        },
+		"dependencies": {
+			"minUI5Version": "1.44.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"handleValidation": true,
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "d3sample.customcomponents.d3barchart.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [],
+			"js": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "d3sample.customcomponents.d3barchart.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppComponentControl",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "BarChart",
+				"pattern": "BarChart",
+				"target": [
+					"BarChartDisplay"
+				]
+			}],
+			"targets": {
+				"BarChartDisplay": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "BarChartDisplay"
+				}
+			}
+		}
+	}
+}
